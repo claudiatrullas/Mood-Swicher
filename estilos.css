@@ -1,0 +1,134 @@
+/* ---- Estil general ---- */
+body {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background 0.8s ease, color 0.8s ease;
+  background: linear-gradient(180deg, #fdfdfd, #eaeaea);
+}
+
+header {
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.3rem;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.subtext {
+  color: #555;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+/* ---- Footer ---- */
+footer {
+  background-color: rgba(0,0,0,0.05);
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ---- Mood box ---- */
+.mood-box {
+  padding: 2.5rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(15px);
+  width: fit-content;
+  margin: 2rem auto;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transition: transform 0.5s ease, background 0.6s ease;
+}
+
+.mood-box:hover {
+  transform: scale(1.07);
+}
+
+.mood-img {
+  width: 280px;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+  opacity: 1;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.mood-img.ocult {
+  opacity: 0;
+  display: none;
+}
+
+/* ---- Botons ---- */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+button {
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #eee;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #ddd;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ---- Colors per estat ---- */
+.happy {
+  background: linear-gradient(135deg, #FFF8B0, #FFD65A);
+  color: #b07300;
+  font-family: 'Raleway', sans-serif;
+}
+
+.sad {
+  background: linear-gradient(135deg, #B0D8FF, #5C9EFF);
+  color: #043f80;
+  font-family: 'Nunito', sans-serif;
+}
+
+.angry {
+  background: linear-gradient(135deg, #FFBABA, #FF5252);
+  color: #6e0000;
+  font-family: 'Raleway', sans-serif;
+}
+
+.chill {
+  background: linear-gradient(135deg, #B2F2BB, #47B28C);
+  color: #034d2f;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Estat neutral i reinicia */
+.neutral {
+  background: linear-gradient(180deg, #ffffff, #f1f1f1);
+  color: #333;
+}
+
+/* ---- Transicions de text ---- */
+#moodText {
+  transition: color 0.6s ease, transform 0.5s ease;
+}
+
+.mood-box:hover #moodText {
+  transform: scale(1.03);
+}
